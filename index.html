@@ -2,33 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Blog preview card</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <!-- Outer -->
+  <div class="outer">
+    <!-- Inner -->
+    <div class="inner">
+      <!-- Blog Thumbnail Container -->
+      <div class="blog-thumbnail-container">
+        <img class="blog-thumbnail"src="/assets/images/illustration-article.svg" alt="" aria-hidden="true">
+      </div>
+      <!-- Blog Meta Data -->
+      <div class="blog-meta-data-container">
+        <!-- Blog Category Container -->
+        <div class="blog-category-container">
+          Learning
+        </div>
+        <!-- Blog Published Date Container -->
+        <div class="blog-published-date-container">
+          Published <span>21 Dec 2023</span>
+        </div>
+      </div>
+      <!-- Blog Content Container -->
+      <div class="blog-content-container">
+        <!-- Blog Title Container -->
+        <div class="blog-title-container">
+          <a href="https://github.com/justinnvera/Social-Links-Profile" target="_blank"><h2 class="blog-title">HTML & CSS foundations</h2></a>
+        </div>
+        <!-- Blog Content Container -->
+        <div class="blog-content-container">
+          <p class="blog-excerpt">
+            These languages are the backbone of every
+            website, defining structure, content, and
+            presentation.
+          </p>
+        </div>
+      </div>
+      <!-- Blog Author Container -->
+      <div class="blog-author-container">
+        <!-- Blog Author Profile Image Container -->
+        <div class="blog-author-profile-image-container">
+          <img class="blog-author-profile-image" src="/assets/images/image-avatar.webp" alt="" aria-hidden="true">
+        </div>
+        <!-- Blog Author Name Container -->
+        <div class="blog-author-name-container">
+          <h3 class="blog-author-name">Greg Hooper</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
